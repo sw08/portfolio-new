@@ -25,6 +25,9 @@ function next() {
 }
 
 function hide(id) {
+    if (id == document.sections) {
+        get("next2").style.opacity = '1';
+    }
     get(`c${id}`).style.opacity = '0';
     withoutTransition([`s${id}`, `a${id}`], function () {
         get(`s${id}`).style.opacity = '0';
@@ -39,6 +42,9 @@ function hide(id) {
     }
 }
 function show(id) { 
+    if (id == document.sections) {
+        get("next2").style.opacity = '0';
+    }
     get(`s${id}`).style.opacity = '1';
     get(`s${id}`).style.zIndex = '1';
     setTimeout(function () {
