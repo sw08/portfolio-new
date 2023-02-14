@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('/assets/NotoSansKR.otf');
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.no-transition {
+    transition: none !important;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    color: inherit;
+    font-size: 1vw;
+    text-align: middle;
+    scale: 1;
+    word-break: break-all;
+}
+
+div {
+    display: inline-block;
+}
+
+
+div#wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+div#first, div#second {
+    height: 100vh;
+    border: 0;
+    transition: 0.75s;
+    position: relative;
+}
+
+
+div#first {
+    width: 40vw;
+    background-color: black;
+    color: white;
+}
+
+div#second {
+    width: 60vw;
+    background-color: white;
+}
+
+div#profile {
+    margin: 0;
+    width: 80%;
+    transition: 0.5s;
+}
+
+div#navbar {
+    position: absolute;
+    left: -150%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+
+div#links {
+    margin: 1vh;
+}
+
+div#nextBtnMain {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.75s;
+}
+
+div.pageBtn {
+    width: 2vw;
+    height: 2vw;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+div.pageBtn:hover {
+    cursor: pointer;
+}
+
+div.button {
+    color: white;
+    background-color: black;
+    border: black 2.5px solid;
+    max-height: 15vh;
+    border-radius: 7.5vh;
+    transition: 0.25s;
+}
+
+div.button:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+div.section {
+    opacity: 0;
+    flex-direction: column;
+    transition: 0.5s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+div.appear {
+    transition: 1.5s;
+    height: 0;
+    overflow: hidden;
+    border-radius: 1vw;
+    min-width: 50vw;
+}
+
+div.content {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    flex-direction: column;
+}
+
+div.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.vertical {
+    flex-direction: column;
+}
+
+div.moveBtn {
+    height: 3.75vw;
+    width: 3.75vw;
+    text-align: middle;
+}
+
+div.projectRow {
+    margin: 1vw 0;
+}
+
+div.project {
+    border: black 2px solid;
+    border-radius: 1vw;
+    width: 35vw;
+    height: 38vh;
+    margin: 0 1vw;
+}
+
+div.projectDescription {
+    text-align: left;
+    margin: 1vw;
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+img#main, img.moveBtn {
+    width: 3.75vw;
+}
+
+img.hoverBtn {
+    transition: 0.25s;
+}
+
+img.hoverBtn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+img.projectIcon {
+    width: 10vw;
+    margin: 1vw;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a#github, a#email, a#discord {
+    width: 10%;
+    margin: 1%;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 3vh;
+    scale: inherit;
+}
+
+h1 {
+    font-size: 4em;
+}
+h2 {
+    font-size: 3.6em;
+}
+h3 {
+    font-size: 3.2em;
+}
+h4 {
+    font-size: 2.8em;
+}
+h5 {
+    font-size: 2.4em;
+}
+h6 {
+    font-size: 2em;
+}
+
+h6.btnText {
+    display: block;
+    margin: 2vh 3vw;
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
