@@ -11,6 +11,14 @@
         <link rel="shortcut icon" href="/assets/profile.png">
         <link rel="stylesheet" href="/style.css">
         <script type="text/javascript" src="/section.js"></script>
+        <script>
+            window.addEventListener('load', () => {
+                if (window.devicePixelRatio < 1 || true) {
+                    document.body.webkitRequestFullscreen();
+                    // window.orientation.lock("portrait");
+                }
+            })
+        </script>
     </head>
     <body>
         <div id="wrapper" class='middle'>
@@ -151,21 +159,6 @@
                         <div class="content middle" id="c4">
                             <div class="projectRow middle">
                                 <div class="project middle">
-                                    <img src="/assets/thinkingbot.svg" class='projectIcon'>
-                                    <div class="projectDescription">
-                                        <h5 style="margin: 0">ThinkingBot</h5>
-                                        <p>
-                                            제 첫번째 디스코드 봇이자 프로젝트입니다.
-                                            2020년에 처음으로 출시되어 중간의 일시적 서비스 중단 이후 2021년 초까지 서비스되었습니다.
-                                            콘텐츠는 다른 양산형 봇들과 크게 다름이 없으나 이 프로젝트를 통해 제 개발 실력이
-                                            많이 성장한 만큼 저에게는 꽤나 뜻깊은 프로젝트입니다.<br>
-                                            소스 코드: 
-                                            <b><a href="https://github.com/sw08/ThinkingBot" target="_blank">v1</a></b> /
-                                            <b><a href="https://github.com/sw08/ThinkingBot-v2" target="_blank">v2</a></b>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="project middle">
                                     <img src="/assets/memebot.png" class='projectIcon'>
                                     <div class="projectDescription">
                                         <h5 style="margin: 0">짤방러</h5>
@@ -179,8 +172,6 @@
                                         </p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="projectRow middle">
                                 <div class="project middle">
                                     <img src="/assets/profile.png" class='projectIcon'>
                                     <div class="projectDescription">
@@ -191,6 +182,20 @@
                                             소통용 기능, 카테고리, 성능, 디자인 등 여러 사유로 다시 제작될 예정입니다.
                                             <br><br>
                                             <br><b><a href="https://blog.yswysw.tech" target="_blank">접속하기</a></b>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projectRow middle">
+                                <div class="project middle">
+                                    <img src="/assets/aclogo.svg" class="projectIcon">
+                                    <div class="projectDescription">
+                                        <h5 style="margin: 0">ACServer Plugin</h5>
+                                        <p>
+                                            제가 제일 자주 즐겨 하는 게임 중 하나인 아세토 코르사의 멀티플레이어 서버 플러그인용 라이브러리입니다.
+                                            서버와 플러그인 간 통신을 담당하며, 적어도 공식 예제에 있는 부분만큼은 모두 구현되었습니다.
+                                            처음으로 만든 node.js 패키지이며 처음 다루는 부분들이 많아 제작에 긴 시간이 소요되었습니다.
+                                            <br><b><a href='https://www.npmjs.com/package/acserver-plugin'>NPM</a></b>
                                         </p>
                                     </div>
                                 </div>
